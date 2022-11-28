@@ -12,9 +12,9 @@ Mav is a responsive web application built with Angular 14 that lets you explore 
 
 ## Movies screen 
 <img src="src/assets/screenshots/ss4.JPG" alt="ss4" height="250px">
-#### Searching feature
+### /Searching feature
 <img src="src/assets/screenshots/ss5.JPG" alt="ss5" height="250px"> 
-#### pagination feature
+### /pagination feature
 <img src="src/assets/screenshots/ss12.JPG" alt="ss2" height="250px">
 
 ## Movie detail screen [About + Cast + Crew + Similar movies + Videos + Images]
