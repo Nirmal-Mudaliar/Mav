@@ -1,12 +1,16 @@
 # Mav
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+Mav is a responsive web application built with Angular 14 that lets you explore new or upcomming movies and series with lots of different features!
+
 
 ## Screenshots
+### Home screen 
 <img src="src/assets/screenshots/ss1.JPG" alt="ss1" height="250px">  
 <img src="src/assets/screenshots/ss14.JPG" alt="ss14" height="250px">  
 <img src="src/assets/screenshots/ss2.JPG" alt="ss2" height="250px"> 
 <img src="src/assets/screenshots/ss3.JPG" alt="ss3" height="250px"> 
+
+### Movies Screen 
 <img src="src/assets/screenshots/ss4.JPG" alt="ss4" height="250px"> 
 <img src="src/assets/screenshots/ss5.JPG" alt="ss5" height="250px"> 
 <img src="src/assets/screenshots/ss12.JPG" alt="ss2" height="250px">
