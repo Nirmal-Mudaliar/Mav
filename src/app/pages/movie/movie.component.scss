@@ -1,0 +1,89 @@
+@import "../../../styles/colors";
+
+:host ::ng-deep {
+  .p-tabview-nav {
+    justify-content: left;
+  }
+  .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    color: $accentColorDark;
+  }
+
+  .p-tabview .p-tabview-nav .p-tabview-ink-bar {
+    background-color: $accentColorLight;
+  }
+
+  .p-chip {
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.poster {
+  max-width: 100%;
+}
+
+.overview {
+  line-height: 1.5;
+}
+
+.stat {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  color: $accentColorLight;
+}
+
+.value {
+  margin-left: 10px;
+}
+
+.genre-chips {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.actor {
+  img {
+    padding: 10px;
+    width: 100%;
+  }
+  span {
+    display: block;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+.crew {
+  img {
+    padding: 10px;
+    width: 100%;
+  }
+  span {
+    display: block;
+    text-align: center;
+    margin: 10px 0px;
+  }
+  .person-name {
+    color: $accentColorLight;
+  }
+}
+
+.person-name {
+  font-weight: bold;
+  color: $accentColorLight;
+}
+.title {
+  margin-left: 80px;
+}
+
+.head {
+  font-weight: bold;
+  color: $accentColorDark;
+}

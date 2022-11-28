@@ -1,0 +1,124 @@
+<ng-container *ngIf="movie">
+  <app-slider [items]="[movie]"></app-slider>
+  <p-tabView>
+    <p-tabPanel header="Overview">
+      <div class="grid">
+        <div class="col-12 md:col-3 lg:col-3">
+          <img
+            class="poster"
+            src="{{ imagesSizes.medium }}{{ movie.poster_path }}"
+            alt=""
+          />
+        </div>
+        <div class="col-12 md:col-9 lg:col-9">
+          <h2 class="head">About</h2>
+          <p class="overview">{{ movie.overview }}</p>
+          <div class="stat">
+            <div class="label">Released date:</div>
+            <div class="value">
+              {{ movie.release_date | date: "mediumDate" }}
+            </div>
+          </div>
+          <div class="stat">
+            <div class="label">Duration:</div>
+            <div class="value">{{ movie.runtime }} minutes</div>
+          </div>
+          <div class="stat">
+            <div class="label">Language:</div>
+            <div class="value">{{ movie.original_language | uppercase }}</div>
+          </div>
+          <div class="stat">
+            <div class="label">Revenue:</div>
+            <div class="value">{{ movie.revenue | currency }}</div>
+          </div>
+          <div class="genre-chips">
+            <ng-container *ngFor="let genre of genres">
+              <p-chip label="{{ genre.name }}"></p-chip>
+            </ng-container>
+          </div>
+          <div class="produced-by">
+            <h3 class="head">Produced by</h3>
+            <ng-container *ngFor="let company of productionCompanies">
+              <p-chip
+                label="{{ company.name }}"
+                image="{{ imagesSizes.large }}{{ company.logo_path }}"
+              ></p-chip>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </p-tabPanel>
+    <p-tabPanel header="Videos">
+      <div class="grid">
+        <ng-container *ngFor="let video of movieVideos">
+          <div class="col-12 md:col-4 lg:col-4">
+            <app-video-embed
+              [site]="video.site"
+              [key]="video.key"
+            ></app-video-embed>
+          </div>
+        </ng-container>
+      </div>
+    </p-tabPanel>
+    <p-tabPanel header="Photos">
+      <div class="grid">
+        <ng-container *ngFor="let photo of movieImages?.backdrops">
+          <div class="col-12 md:col-4 lg:col-4">
+            <p-image
+              src="{{ imagesSizes.large }}{{ photo.file_path }}"
+              alt="Image"
+              width="100%"
+              [preview]="true"
+            ></p-image>
+          </div>
+        </ng-container>
+      </div>
+    </p-tabPanel>
+  </p-tabView>
+
+  <h1 class="title">Cast</h1>
+  <p-carousel *ngIf="movieCast" [value]="movieCast" [numVisible]="6">
+    <ng-template let-actor pTemplate="item">
+      <ng-container *ngIf="actor.profile_path != null; else elseBlock">
+        <div class="actor">
+          <img [src]="imagesSizes.medium + actor.profile_path" alt="" />
+          <span class="person-name">{{ actor.name }}</span>
+          <span>{{ actor.character }}</span>
+        </div>
+      </ng-container>
+      <ng-template #elseBlock>
+        <div class="actor">
+          <img src="../../../assets/images/app_logo_100.svg" alt="" />
+          <span>{{ actor.name }}</span>
+        </div>
+      </ng-template>
+    </ng-template>
+  </p-carousel>
+
+  <h1 class="title">Crew</h1>
+  <p-carousel *ngIf="movieCrew" [value]="movieCrew" [numVisible]="6">
+    <ng-template let-crew pTemplate="item">
+      <ng-container *ngIf="crew.profile_path != null; else elseBlock">
+        <div class="actor">
+          <img [src]="imagesSizes.medium + crew.profile_path" alt="" />
+          <span class="person-name">{{ crew.name }}</span>
+          <span>{{ crew.job }}</span>
+        </div>
+      </ng-container>
+      <ng-template #elseBlock>
+        <div class="actor">
+          <img src="../../../assets/images/app_logo_100.svg" alt="" />
+          <span class="person-name">{{ crew.name }}</span>
+          <span>{{ crew.job }}</span>
+        </div>
+      </ng-template>
+    </ng-template>
+  </p-carousel>
+
+  <h1 class="title">Similar movies</h1>
+  <p-carousel [value]="similarMovies" [numVisible]="6">
+    <ng-template let-similarMovie pTemplate="item">
+      <app-movie-item [item]="similarMovie"></app-movie-item>
+    </ng-template>
+  </p-carousel>
+</ng-container>

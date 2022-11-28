@@ -1,0 +1,13 @@
+@import "../../../styles/colors";
+.genre-link {
+  display: flex;
+  width: 100%;
+  background: rgb(3, 159, 60);
+  padding: 10px 50px 10px 50px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
