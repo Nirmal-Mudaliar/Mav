@@ -4,10 +4,29 @@
       <img src="assets/images/app_logo_50.svg" alt="" />
     </a>
     <ul class="navbar-links">
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/movies">Movies</a></li>
-      <li><a routerLink="/tvshows">TV shows</a></li>
-      <li><a routerLink="/genres">Genres</a></li>
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="navbar-links-active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a routerLink="/movies" routerLinkActive="navbar-links-active"
+          >Movies</a
+        >
+      </li>
+      <li>
+        <a routerLink="/tvshows" routerLinkActive="navbar-links-active"
+          >TV shows</a
+        >
+      </li>
+      <li>
+        <a routerLink="/genres" routerLinkActive="navbar-links-active"
+          >Genres</a
+        >
+      </li>
     </ul>
   </nav>
 </header>
