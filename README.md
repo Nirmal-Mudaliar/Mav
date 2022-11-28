@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
 ## Screenshots
-<img src="src/app/assets/screenshots/ss1.JPG" alt="ss1" height="250px">  
+<img src="src/assets/screenshots/ss1.JPG" alt="ss1" height="250px">  
 
 ## Development server
 
