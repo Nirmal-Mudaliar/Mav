@@ -4,6 +4,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Screenshots
 <img src="src/assets/screenshots/ss1.JPG" alt="ss1" height="250px">  
+<img src="src/assets/screenshots/ss1.JPG" alt="ss2" height="250px"> 
+<img src="src/assets/screenshots/ss1.JPG" alt="ss3" height="250px"> 
+<img src="src/assets/screenshots/ss1.JPG" alt="ss4" height="250px"> 
+<img src="src/assets/screenshots/ss1.JPG" alt="ss5" height="250px"> 
+<img src="src/assets/screenshots/ss1.JPG" alt="ss6" height="250px"> 
+<img src="src/assets/screenshots/ss1.JPG" alt="ss7" height="250px"> 
+<img src="src/assets/screenshots/ss1.JPG" alt="ss8" height="250px"> 
+<img src="src/assets/screenshots/ss1.JPG" alt="ss9" height="250px"> 
+<img src="src/assets/screenshots/ss1.JPG" alt="ss10" height="250px"> 
+<img src="src/assets/screenshots/ss1.JPG" alt="ss11" height="250px"> 
+<img src="src/assets/screenshots/ss1.JPG" alt="ss2" height="250px">
+<img src="src/assets/screenshots/ss1.JPG" alt="ss13" height="250px"> 
 
 ## Development server
 
