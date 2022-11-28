@@ -1,6 +1,6 @@
 # Mav
 
-Mav is a responsive web application built with Angular 14 that lets you explore new or upcomming movies and series with lots of different features!
+Mav is a responsive web application built with Angular 14 that lets you explore new or upcoming movies and series with lots of different features!
 Mav fetches data through remote api https://developers.themoviedb.org/4/getting-started/authorization
 
 ## Screenshots
