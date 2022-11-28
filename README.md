@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Screenshots
 <img src="src/assets/screenshots/ss1.JPG" alt="ss1" height="250px">  
+<img src="src/assets/screenshots/ss14.JPG" alt="ss1" height="250px">  
+
 <img src="src/assets/screenshots/ss2.JPG" alt="ss2" height="250px"> 
 <img src="src/assets/screenshots/ss3.JPG" alt="ss3" height="250px"> 
 <img src="src/assets/screenshots/ss4.JPG" alt="ss4" height="250px"> 
